@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.example.anonym.atlas.RulesActivity">
+
+    <ImageView
+        android:id="@+id/rules_image"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="383dp"
+        app:srcCompat="@drawable/rules" />
+
+    <ImageView
+        android:id="@+id/hard_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/rules_list"
+        android:layout_alignTop="@+id/multiplayer_image"
+        android:clickable="true"
+        android:contentDescription="hard_mode"
+        android:onClick="response_hard"
+        app:srcCompat="@drawable/hard_final" />
+
+    <ImageView
+        android:id="@+id/easy_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/rules_list"
+        android:layout_alignTop="@+id/multiplayer_image"
+        android:clickable="true"
+        android:contentDescription="easy_mode"
+        android:onClick="response_easy"
+        app:srcCompat="@drawable/easy_final" />
+
+    <ImageView
+        android:id="@+id/multiplayer_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:contentDescription="multiplayer"
+        android:onClick="response_multiplayer"
+        app:srcCompat="@drawable/multiplayer" />
+
+    <TextView
+        android:id="@+id/rules_list"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/hard_image"
+        android:layout_alignParentStart="true"
+        android:fontFamily="serif-monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="14sp" />
+
+</RelativeLayout>

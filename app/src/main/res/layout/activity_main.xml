@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_t"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="365dp"
+        android:background="@color/common_google_signin_btn_text_light_pressed"
+        android:fontFamily="monospace"
+        android:onClick="submitplace"
+        android:text="submit"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/enterplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10" />
+
+
+    <TextView
+        android:id="@+id/player2_place"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:text="You"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/get_map"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="195dp"
+        android:background="@drawable/trying"
+        android:fontFamily="monospace"
+        android:onClick="redirectToMaps"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="?attr/colorAccent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:text="Computer"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/comp_place"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/turn_indicator"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@color/black_overlay"
+        android:padding="10dp"
+        android:text="Turn Indicator"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

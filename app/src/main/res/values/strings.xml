@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Atlas</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_activity_rules">Activity_rules</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="names"><![CDATA[<p><h2>RULES : </h2></p>
+    <p><h2 style= align:"center">Welcome to Atlas </h2>
+    &nbsp&#8226; In Atlas, the one who plays first (<strong>P1</strong>) has to name a valid place and <strong>P2</strong> has to give
+    another valid place starting from the end alphabet of the initial place given by the opposition(<strong>P1</strong>).<br>
+    &nbspNo place should be repeated in a given round. This goes on until either of the player gives an incorrect/invalid place.<br><br>
+    &nbsp&#8226; <strong>"Easy mode" : </strong>Only countries will be accepted as valid places. <br>
+    &nbsp&#8226; <strong>"Hard mode" : </strong>Countries, states and cities will be accepted as valid places. <br>
+    </p>]]></string>
+</resources>
